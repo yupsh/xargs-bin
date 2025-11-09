@@ -6,7 +6,7 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	yup "github.com/gloo-foo/framework"
+	gloo "github.com/gloo-foo/framework"
 	. "github.com/yupsh/xargs"
 )
 
@@ -142,5 +142,5 @@ func action(c *cli.Context) error {
 
 	// Create and execute the xargs command
 	cmd := Xargs(params...)
-	return yup.Run(cmd)
+	return gloo.Run(cmd)
 }
